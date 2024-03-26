@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frameWorks", "frameWorks", "{7AAF25CE-968D-41D8-90B8-FC9AEAA48C08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanDesign.AspNetCore", "framewroks\HanDesign.AspNetCore\HanDesign.AspNetCore.csproj", "{2D4D6D11-B7B3-4F81-ACC0-893FAC54CF88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apiServices", "apiServices", "{4A2527C7-B0A7-4BC9-81F0-F112855D1A16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanDesign.AuthorizationCentre", "apiServices\HanDesign.AuthorizationCentre\HanDesign.AuthorizationCentre.csproj", "{44A76AC1-906A-4A7C-BAD4-06B0CF77816B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanDesign.EntityFrameworkCore", "frameWorks\HanDesign.EntityFrameworkCore\HanDesign.EntityFrameworkCore.csproj", "{FA2F71CC-B7A2-4E3F-9AD7-54F57372F9D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanDesign.Domain", "frameWorks\HanDesign.Domain\HanDesign.Domain.csproj", "{05B54E9E-5D2A-4591-9740-F1BCCF2A9024}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{F84DE9E9-8BAB-4DCC-88DF-5001AD94A4F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HanDesign.Authorization", "HanDesign.Authorization", "{4F52C5FF-2A00-49EF-9DAA-6841B9B37656}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanDesign.Authorization.Infrastructure", "modules\HanDesign.Authorization\HanDesign.Authorization.Infrastructure\HanDesign.Authorization.Infrastructure.csproj", "{06BC3EFE-DA8A-4658-90D8-E331EF7E9449}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanDesign.Authorization.Domain", "modules\HanDesign.Authorization\HanDesign.Authorization.Domain\HanDesign.Authorization.Domain.csproj", "{FD382AAB-E221-4695-BF4C-F11832D5D05D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanDesign.Authorization.Application", "modules\HanDesign.Authorization\HanDesign.Authorization.Application\HanDesign.Authorization.Application.csproj", "{D415F920-A352-49FF-A150-3B4A6BEC5238}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D4D6D11-B7B3-4F81-ACC0-893FAC54CF88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4D6D11-B7B3-4F81-ACC0-893FAC54CF88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4D6D11-B7B3-4F81-ACC0-893FAC54CF88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4D6D11-B7B3-4F81-ACC0-893FAC54CF88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44A76AC1-906A-4A7C-BAD4-06B0CF77816B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44A76AC1-906A-4A7C-BAD4-06B0CF77816B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44A76AC1-906A-4A7C-BAD4-06B0CF77816B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44A76AC1-906A-4A7C-BAD4-06B0CF77816B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA2F71CC-B7A2-4E3F-9AD7-54F57372F9D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA2F71CC-B7A2-4E3F-9AD7-54F57372F9D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA2F71CC-B7A2-4E3F-9AD7-54F57372F9D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA2F71CC-B7A2-4E3F-9AD7-54F57372F9D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05B54E9E-5D2A-4591-9740-F1BCCF2A9024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05B54E9E-5D2A-4591-9740-F1BCCF2A9024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05B54E9E-5D2A-4591-9740-F1BCCF2A9024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05B54E9E-5D2A-4591-9740-F1BCCF2A9024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06BC3EFE-DA8A-4658-90D8-E331EF7E9449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06BC3EFE-DA8A-4658-90D8-E331EF7E9449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06BC3EFE-DA8A-4658-90D8-E331EF7E9449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06BC3EFE-DA8A-4658-90D8-E331EF7E9449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD382AAB-E221-4695-BF4C-F11832D5D05D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD382AAB-E221-4695-BF4C-F11832D5D05D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD382AAB-E221-4695-BF4C-F11832D5D05D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD382AAB-E221-4695-BF4C-F11832D5D05D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D415F920-A352-49FF-A150-3B4A6BEC5238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D415F920-A352-49FF-A150-3B4A6BEC5238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D415F920-A352-49FF-A150-3B4A6BEC5238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D415F920-A352-49FF-A150-3B4A6BEC5238}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2D4D6D11-B7B3-4F81-ACC0-893FAC54CF88} = {7AAF25CE-968D-41D8-90B8-FC9AEAA48C08}
+		{44A76AC1-906A-4A7C-BAD4-06B0CF77816B} = {4A2527C7-B0A7-4BC9-81F0-F112855D1A16}
+		{FA2F71CC-B7A2-4E3F-9AD7-54F57372F9D0} = {7AAF25CE-968D-41D8-90B8-FC9AEAA48C08}
+		{05B54E9E-5D2A-4591-9740-F1BCCF2A9024} = {7AAF25CE-968D-41D8-90B8-FC9AEAA48C08}
+		{4F52C5FF-2A00-49EF-9DAA-6841B9B37656} = {F84DE9E9-8BAB-4DCC-88DF-5001AD94A4F9}
+		{06BC3EFE-DA8A-4658-90D8-E331EF7E9449} = {4F52C5FF-2A00-49EF-9DAA-6841B9B37656}
+		{FD382AAB-E221-4695-BF4C-F11832D5D05D} = {4F52C5FF-2A00-49EF-9DAA-6841B9B37656}
+		{D415F920-A352-49FF-A150-3B4A6BEC5238} = {4F52C5FF-2A00-49EF-9DAA-6841B9B37656}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB18ED60-C0C1-4332-914A-A8DF2118B8D2}
+	EndGlobalSection
+EndGlobal

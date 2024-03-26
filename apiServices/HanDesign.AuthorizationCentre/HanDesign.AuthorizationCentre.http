@@ -1,0 +1,6 @@
+@HanDesign.AuthorizationCentre_HostAddress = http://localhost:5276
+
+GET {{HanDesign.AuthorizationCentre_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
