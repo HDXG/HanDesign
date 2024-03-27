@@ -7,6 +7,10 @@ using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Swashbuckle.AspNetCore.SwaggerUI;
+using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace HanDesign.AspNetCore.Extensions
 {
@@ -26,16 +30,12 @@ namespace HanDesign.AspNetCore.Extensions
             {
                 foreach (var name in names)
                 {
-                    containerBuilder
-                        .RegisterAssemblyTypes(Assembly.Load(name + ".Application"),
-                            Assembly.Load(name + ".Infrastructure"))
+                    containerBuilder.RegisterAssemblyTypes(Assembly.Load(name + ".Application"),Assembly.Load(name + ".Infrastructure"))
                         .Where(a => a.Name.EndsWith("AppService") || a.Name.EndsWith("Repository"))
                         .AsImplementedInterfaces();
                 }
             });
         }
-
-
         /// <summary>
         /// 配置swagger拓展
         /// </summary>
@@ -83,7 +83,6 @@ namespace HanDesign.AspNetCore.Extensions
                 });
             });
         }
-
         /// <summary>
         /// 添加进行使用swagger内容
         /// </summary>
@@ -101,6 +100,33 @@ namespace HanDesign.AspNetCore.Extensions
             });
         }
 
+
+        /// <summary>
+        /// 配置swagger内容
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="configuration"></param>
+        public  static void UserJwt(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(option =>
+            {
+                //取出配置的私钥
+                var SecretKeyDemo = Encoding.UTF8.GetBytes(configuration["AuthenticationDemo:SecretKeyDemo"]);
+                option.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    //验证发布者
+                    ValidateIssuer = true,
+                    ValidIssuer = configuration["AuthenticationDemo:IssuerDemo"],
+                    //验证接收者
+                    ValidateAudience = true,
+                    ValidAudience = configuration["AuthenticationDemo:AudienceDemo"],
+                    //验证是否过期
+                    ValidateLifetime = true,
+                    //验证私钥
+                    IssuerSigningKey = new SymmetricSecurityKey(SecretKeyDemo)
+                };
+            });
+        }
     }
 
 }

@@ -17,17 +17,20 @@ namespace HanDesign.AuthorizationCentre
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.Services.AddDbContext<IAuthorizationContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("ctwContext")));
 
             #region 自定义配置
+            builder.Services.AddDbContext<IAuthorizationContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("ctwContext")));
+            //配置jwt内容
+            builder.Services.UserJwt(builder.Configuration);
             builder.Services.ConfigurationSwagger(apiServiceName,apiServiceVersion);
             #endregion
             var app = builder.Build();
             #region 自定义配置
             app.UseSwagger(apiServiceName,apiServiceVersion);
             #endregion
-
             app.UseHttpsRedirection();
+            //启用身份认证
+            app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllers();
             app.Run();

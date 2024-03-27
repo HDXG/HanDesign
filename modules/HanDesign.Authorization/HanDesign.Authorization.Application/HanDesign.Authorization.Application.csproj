@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\HanDesign.Authorization.Domain\HanDesign.Authorization.Domain.csproj" />
   </ItemGroup>
 
