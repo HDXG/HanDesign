@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\framewroks\HanDesign.Domain\HanDesign.Domain.csproj" />
-  </ItemGroup>
-
 </Project>

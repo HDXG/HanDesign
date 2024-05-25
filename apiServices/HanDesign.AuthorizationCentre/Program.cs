@@ -17,7 +17,6 @@ namespace HanDesign.AuthorizationCentre
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
             #region 自定义配置
             builder.Services.AddDbContext<IAuthorizationContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("ctwContext")));
             //配置jwt内容

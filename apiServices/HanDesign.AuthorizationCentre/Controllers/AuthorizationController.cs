@@ -46,8 +46,6 @@ namespace HanDesign.AuthorizationCentre.Controllers
             claims.Add(new Claim("Role", "管理员"));
             return CreateToken(claims);
         }
-
-
         /// <summary>
         /// 测试autofac
         /// </summary>
