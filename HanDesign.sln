@@ -27,7 +27,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanDesign.EntityFrameworkCo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HanDesign.System", "HanDesign.System", "{A5BFA0FB-9D60-40BF-8AAF-075242DB3C03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanDesign.System.Application", "modules\HanDesign.System\HanDesign.System.Application\HanDesign.System.Application.csproj", "{B6A99536-C50F-46D1-8C5A-C9B6405C6FC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanDesign.System.Application", "modules\HanDesign.System\HanDesign.System.Application\HanDesign.System.Application.csproj", "{B6A99536-C50F-46D1-8C5A-C9B6405C6FC4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanDesign.System.Domain", "modules\HanDesign.System\HanDesign.System.Domain\HanDesign.System.Domain.csproj", "{10EB4B1E-80E3-4CAD-BB32-C395E0F7DF3F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanDesign.System.Infrastructure", "modules\HanDesign.System\HanDesign.System.Infrastructure\HanDesign.System.Infrastructure.csproj", "{1F60CCEB-72B4-4BF7-A040-04400D9143BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanDesign.SystemCenter", "apiServices\HanDesign.SystemCenter\HanDesign.SystemCenter.csproj", "{C774C063-B6D0-49CF-8B2E-6780D9BDCA5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +73,18 @@ Global
 		{B6A99536-C50F-46D1-8C5A-C9B6405C6FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6A99536-C50F-46D1-8C5A-C9B6405C6FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6A99536-C50F-46D1-8C5A-C9B6405C6FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10EB4B1E-80E3-4CAD-BB32-C395E0F7DF3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10EB4B1E-80E3-4CAD-BB32-C395E0F7DF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10EB4B1E-80E3-4CAD-BB32-C395E0F7DF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10EB4B1E-80E3-4CAD-BB32-C395E0F7DF3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F60CCEB-72B4-4BF7-A040-04400D9143BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F60CCEB-72B4-4BF7-A040-04400D9143BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F60CCEB-72B4-4BF7-A040-04400D9143BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F60CCEB-72B4-4BF7-A040-04400D9143BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C774C063-B6D0-49CF-8B2E-6780D9BDCA5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C774C063-B6D0-49CF-8B2E-6780D9BDCA5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C774C063-B6D0-49CF-8B2E-6780D9BDCA5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C774C063-B6D0-49CF-8B2E-6780D9BDCA5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +100,9 @@ Global
 		{2527F2BD-3A96-46CF-BC6C-436BCE24BED6} = {7AAF25CE-968D-41D8-90B8-FC9AEAA48C08}
 		{A5BFA0FB-9D60-40BF-8AAF-075242DB3C03} = {F84DE9E9-8BAB-4DCC-88DF-5001AD94A4F9}
 		{B6A99536-C50F-46D1-8C5A-C9B6405C6FC4} = {A5BFA0FB-9D60-40BF-8AAF-075242DB3C03}
+		{10EB4B1E-80E3-4CAD-BB32-C395E0F7DF3F} = {A5BFA0FB-9D60-40BF-8AAF-075242DB3C03}
+		{1F60CCEB-72B4-4BF7-A040-04400D9143BA} = {A5BFA0FB-9D60-40BF-8AAF-075242DB3C03}
+		{C774C063-B6D0-49CF-8B2E-6780D9BDCA5F} = {4A2527C7-B0A7-4BC9-81F0-F112855D1A16}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB18ED60-C0C1-4332-914A-A8DF2118B8D2}

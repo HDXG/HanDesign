@@ -17,9 +17,7 @@ namespace HanDesign.AuthorizationCentre.Controllers
     [Authorize]
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class AuthorizationController(
-        IConfiguration configuration,
-        IUserAppService userAppService) : ControllerBase
+    public class AuthorizationController(IConfiguration configuration,IUserAppService userAppService) : ControllerBase
     {
         /// <summary>
         /// 测试方法使用

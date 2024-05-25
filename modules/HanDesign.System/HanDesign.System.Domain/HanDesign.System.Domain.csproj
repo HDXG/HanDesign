@@ -7,11 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Mapster" Version="7.4.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\HanDesign.System.Domain\HanDesign.System.Domain.csproj" />
+    <ProjectReference Include="..\..\..\framewroks\HanDesign.Domain\HanDesign.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <DocumentationFile>E:\Net\.net8\HanDesign\apiServices\HanDesign.AuthorizationCentre\bin\Debug\net8.0\HanDesign.AuthorizationCentre.xml</DocumentationFile>
+    <DocumentationFile>E:\Net\.net8\HanDesign\apiServices\HanDesign.SystemCenter\bin\Debug\net8.0\HanDesign.SystemCenter.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -17,13 +17,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.5" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\framewroks\HanDesign.AspNetCore\HanDesign.AspNetCore.csproj" />
-    <ProjectReference Include="..\..\modules\HanDesign.Authorization\HanDesign.Authorization.Application\HanDesign.Authorization.Application.csproj" />
-    <ProjectReference Include="..\..\modules\HanDesign.Authorization\HanDesign.Authorization.Infrastructure\HanDesign.Authorization.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\modules\HanDesign.System\HanDesign.System.Application\HanDesign.System.Application.csproj" />
+    <ProjectReference Include="..\..\modules\HanDesign.System\HanDesign.System.Infrastructure\HanDesign.System.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

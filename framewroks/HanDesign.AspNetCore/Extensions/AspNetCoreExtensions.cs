@@ -102,7 +102,7 @@ namespace HanDesign.AspNetCore.Extensions
 
 
         /// <summary>
-        /// 配置swagger内容
+        /// 配置jwt内容
         /// </summary>
         /// <param name="services"></param>
         /// <param name="configuration"></param>
