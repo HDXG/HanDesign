@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HanDesign.Domain;
+﻿using HanDesign.Domain;
 using HanDesign.Domain.Repositoryes;
 using Microsoft.EntityFrameworkCore;
 

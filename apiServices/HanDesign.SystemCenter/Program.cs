@@ -1,4 +1,5 @@
 using HanDesign.AspNetCore.Extensions;
+using HanDesign.AspNetCore.Filter;
 using HanDesign.System.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,8 +14,10 @@ namespace HanDesign.SystemCenter
             var builder = WebApplication.CreateBuilder(args);
             #region ÅäÖÃÄÚÈÝ
             builder.Host.AutoFac("HanDesign.System");
-            builder.Services.AddControllers();
-            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddControllers(option => {
+                option.Filters.Add<HttpResponseExceptionFilter>();
+                option.Filters.Add<HttpResponseSuccessFilter>();
+            });
             builder.Services.AddSwaggerGen();
             builder.Services.AddDbContext<ISystemContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("ctwContext")));
             builder.Services.ConfigurationSwagger(apiServiceName, apiServiceVersion);

@@ -15,7 +15,6 @@ namespace HanDesign.AuthorizationCentre
 
             builder.Host.AutoFac("HanDesign.Authorization");
             builder.Services.AddControllers();
-            builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             #region ◊‘∂®“Â≈‰÷√
             builder.Services.AddDbContext<IAuthorizationContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("ctwContext")));

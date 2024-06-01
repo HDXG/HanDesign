@@ -19,5 +19,15 @@ namespace HanDesign.SystemCenter.Controllers
         /// <returns></returns>
         [HttpPost]
         public Task<List<UserDto>> GetUserList()=> userAppService.GetListAsync();
+
+        /// <summary>
+        /// 测试一下返回
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public int Demo()
+        {
+            return Int32.Parse("afa");
+        }
     }
 }
