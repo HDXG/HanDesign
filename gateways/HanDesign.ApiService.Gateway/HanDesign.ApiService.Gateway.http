@@ -1,0 +1,6 @@
+@HanDesign.ApiService.Gateway_HostAddress = http://localhost:5218
+
+GET {{HanDesign.ApiService.Gateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

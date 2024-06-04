@@ -35,7 +35,8 @@ namespace HanDesign.AspNetCore.Filter
             watch.Stop();//计时结束
             if (context.Exception != null)
             {
-                string DefaultErrorText = webHostEnvironment.IsDevelopment() ? context.Exception.Message : "在您的请求期间发生了一个内部错误，请稍后重试。";
+                //string DefaultErrorText = webHostEnvironment.IsDevelopment() ? context.Exception.Message : "在您的请求期间发生了一个内部错误，请稍后重试。";
+                string DefaultErrorText =  context.Exception.Message;
                 context.HttpContext.Response.StatusCode = ErrorStatusCode;
                 context.Result = new ObjectResult(new HttpResponseError(ErrorStatusCode, DefaultErrorText, DateTime.Now, watch.ElapsedMilliseconds))
                 {

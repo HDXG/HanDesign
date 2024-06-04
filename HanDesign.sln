@@ -33,7 +33,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanDesign.System.Domain", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanDesign.System.Infrastructure", "modules\HanDesign.System\HanDesign.System.Infrastructure\HanDesign.System.Infrastructure.csproj", "{1F60CCEB-72B4-4BF7-A040-04400D9143BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanDesign.SystemCenter", "apiServices\HanDesign.SystemCenter\HanDesign.SystemCenter.csproj", "{C774C063-B6D0-49CF-8B2E-6780D9BDCA5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanDesign.SystemCenter", "apiServices\HanDesign.SystemCenter\HanDesign.SystemCenter.csproj", "{C774C063-B6D0-49CF-8B2E-6780D9BDCA5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanDesign.Yarp.ReverseProxy", "framewroks\HanDesign.Yarp.ReverseProxy\HanDesign.Yarp.ReverseProxy.csproj", "{5D9F46E4-A6B4-4785-8C19-3D15FDF1A349}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gateways", "gateways", "{A7E79BB9-D8C9-46E3-BD87-C70404235500}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanDesign.ApiService.Gateway", "gateways\HanDesign.ApiService.Gateway\HanDesign.ApiService.Gateway.csproj", "{136984C3-AD30-4FC9-B2DD-07E37D764B3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +91,14 @@ Global
 		{C774C063-B6D0-49CF-8B2E-6780D9BDCA5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C774C063-B6D0-49CF-8B2E-6780D9BDCA5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C774C063-B6D0-49CF-8B2E-6780D9BDCA5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D9F46E4-A6B4-4785-8C19-3D15FDF1A349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D9F46E4-A6B4-4785-8C19-3D15FDF1A349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D9F46E4-A6B4-4785-8C19-3D15FDF1A349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D9F46E4-A6B4-4785-8C19-3D15FDF1A349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{136984C3-AD30-4FC9-B2DD-07E37D764B3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136984C3-AD30-4FC9-B2DD-07E37D764B3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136984C3-AD30-4FC9-B2DD-07E37D764B3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136984C3-AD30-4FC9-B2DD-07E37D764B3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,6 +117,8 @@ Global
 		{10EB4B1E-80E3-4CAD-BB32-C395E0F7DF3F} = {A5BFA0FB-9D60-40BF-8AAF-075242DB3C03}
 		{1F60CCEB-72B4-4BF7-A040-04400D9143BA} = {A5BFA0FB-9D60-40BF-8AAF-075242DB3C03}
 		{C774C063-B6D0-49CF-8B2E-6780D9BDCA5F} = {4A2527C7-B0A7-4BC9-81F0-F112855D1A16}
+		{5D9F46E4-A6B4-4785-8C19-3D15FDF1A349} = {7AAF25CE-968D-41D8-90B8-FC9AEAA48C08}
+		{136984C3-AD30-4FC9-B2DD-07E37D764B3F} = {A7E79BB9-D8C9-46E3-BD87-C70404235500}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB18ED60-C0C1-4332-914A-A8DF2118B8D2}
