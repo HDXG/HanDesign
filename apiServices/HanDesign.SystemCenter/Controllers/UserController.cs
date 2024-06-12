@@ -9,7 +9,7 @@ namespace HanDesign.SystemCenter.Controllers
     /// 用户控制器
     /// </summary>
     /// <param name="userAppService"></param>
-    [Route("api/[controller]/[action]")]
+    [Route("api/SystemCenter/[controller]/[action]")]
     [ApiController]
     public class UserController(IUserAppService userAppService) : ControllerBase
     {
@@ -25,7 +25,7 @@ namespace HanDesign.SystemCenter.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public int Demo()
+        public int PostDemo()
         {
             return Int32.Parse("afa");
         }

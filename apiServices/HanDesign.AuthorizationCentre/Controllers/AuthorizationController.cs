@@ -15,7 +15,7 @@ namespace HanDesign.AuthorizationCentre.Controllers
     /// 授权中心内容
     /// </summary>
     [Authorize]
-    [Route("api/[controller]/[action]")]
+    [Route("api/AuthorizationCentre/[controller]/[action]")]
     [ApiController]
     public class AuthorizationController(IConfiguration configuration,IUserAppService userAppService) : ControllerBase
     {
@@ -23,9 +23,8 @@ namespace HanDesign.AuthorizationCentre.Controllers
         /// 测试方法使用
         /// </summary>
         /// <returns></returns>
-      
         [HttpGet]
-        public string Get()
+        public string GetDemo()
         {
             return "测试使用";
         }
@@ -42,8 +41,10 @@ namespace HanDesign.AuthorizationCentre.Controllers
             claims.Add(new Claim( "UserName" ,"admin"));
             claims.Add(new Claim("UserId", "123"));
             claims.Add(new Claim("Role", "管理员"));
-            return CreateToken(claims);
+            return CreateTokenClaim(claims);
         }
+
+
         /// <summary>
         /// 测试autofac
         /// </summary>
@@ -51,7 +52,7 @@ namespace HanDesign.AuthorizationCentre.Controllers
         [HttpPost]
         public  Task<List<UserDto>> GetUsers() => userAppService.GetListAsync();
 
-        private string CreateToken(List<Claim> Listclaims)
+        private string CreateTokenClaim(List<Claim> Listclaims)
         {
             var signingAlogorithm = SecurityAlgorithms.HmacSha256;
             //取出私钥并以utf8编码字节输出

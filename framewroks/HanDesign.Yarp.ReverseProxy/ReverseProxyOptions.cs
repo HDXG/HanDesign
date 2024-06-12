@@ -57,16 +57,18 @@ namespace HanDesign.Yarp.ReverseProxy
     public class ReverseProxyCluster
     {
         public string ClusterId { get; set; }
-        public string ClusterAddress { get; set; }
+        public string[] ClusterAddress { get; set; }
         public ClusterConfig GetClusterConfig()
         {
+            var dic=new Dictionary<string, DestinationConfig>();
+            for (int i = 1; i <= ClusterAddress.Length; i++)
+            {
+                dic.Add("destination"+i, new DestinationConfig() { Address = ClusterAddress[i-1] });
+            }
             return new ClusterConfig()
             {
                 ClusterId = ClusterId,
-                Destinations=new Dictionary<string, DestinationConfig>()
-                {
-                    { "destination1", new DestinationConfig(){ Address = ClusterAddress }}
-                }
+                Destinations = dic
             };
         }
     }

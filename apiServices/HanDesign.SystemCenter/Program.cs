@@ -21,11 +21,25 @@ namespace HanDesign.SystemCenter
             builder.Services.AddSwaggerGen();
             builder.Services.AddDbContext<ISystemContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("ctwContext")));
             builder.Services.ConfigurationSwagger(apiServiceName, apiServiceVersion);
+            builder.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builde =>
+                {
+                    builde.WithOrigins(
+                    builder.Configuration["App:CorsOrigins"]
+                    .Split(",", StringSplitOptions.RemoveEmptyEntries).ToArray())
+                                   .SetIsOriginAllowedToAllowWildcardSubdomains()
+                                   .AllowAnyHeader()
+                                   .AllowAnyMethod()
+                                   .AllowCredentials();
+                });
+            });
+
             #endregion
 
 
             var app = builder.Build();
-
+            app.UseCors();
             app.UseSwagger(apiServiceName, apiServiceVersion);
 
             app.UseHttpsRedirection();

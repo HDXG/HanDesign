@@ -35,11 +35,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanDesign.System.Infrastruc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanDesign.SystemCenter", "apiServices\HanDesign.SystemCenter\HanDesign.SystemCenter.csproj", "{C774C063-B6D0-49CF-8B2E-6780D9BDCA5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanDesign.Yarp.ReverseProxy", "framewroks\HanDesign.Yarp.ReverseProxy\HanDesign.Yarp.ReverseProxy.csproj", "{5D9F46E4-A6B4-4785-8C19-3D15FDF1A349}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanDesign.Yarp.ReverseProxy", "framewroks\HanDesign.Yarp.ReverseProxy\HanDesign.Yarp.ReverseProxy.csproj", "{5D9F46E4-A6B4-4785-8C19-3D15FDF1A349}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gateways", "gateways", "{A7E79BB9-D8C9-46E3-BD87-C70404235500}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanDesign.ApiService.Gateway", "gateways\HanDesign.ApiService.Gateway\HanDesign.ApiService.Gateway.csproj", "{136984C3-AD30-4FC9-B2DD-07E37D764B3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanDesign.ApiService.Gateway", "gateways\HanDesign.ApiService.Gateway\HanDesign.ApiService.Gateway.csproj", "{136984C3-AD30-4FC9-B2DD-07E37D764B3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
