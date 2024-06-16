@@ -4,7 +4,6 @@ namespace HanDesign.Yarp.ReverseProxy
 {
     public class ReverseProxyOptions
     {
-        public const string Key = "ReverseProxyOptions";
         public ReverseProxyRoute[] Routes { get; set; }
         public ReverseProxyCluster[] Clusters { get; set; }
     }

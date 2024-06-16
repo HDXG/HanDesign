@@ -20,21 +20,21 @@ namespace HanDesign.AuthorizationCentre
             builder.Services.UserJwt(builder.Configuration);
             builder.Services.ConfigurationSwagger(apiServiceName,apiServiceVersion);
 
-            builder.Services.AddCors(options =>
-            {
-                options.AddDefaultPolicy(builde =>
-                {
-                    builde.WithOrigins(
-                    builder.Configuration["App:CorsOrigins"]
-                    .Split(",", StringSplitOptions.RemoveEmptyEntries) .ToArray())
-                                   .SetIsOriginAllowedToAllowWildcardSubdomains()
-                                   .AllowAnyHeader()
-                                   .AllowAnyMethod()
-                                   .AllowCredentials();
-                });
-             });
+            //builder.Services.AddCors(options =>
+            //{
+            //    options.AddDefaultPolicy(builde =>
+            //    {
+            //        builde.WithOrigins(
+            //        builder.Configuration["App:CorsOrigins"]
+            //        .Split(",", StringSplitOptions.RemoveEmptyEntries) .ToArray())
+            //                       .SetIsOriginAllowedToAllowWildcardSubdomains()
+            //                       .AllowAnyHeader()
+            //                       .AllowAnyMethod()
+            //                       .AllowCredentials();
+            //    });
+            // });
             var app = builder.Build();
-            app.UseCors();
+            //app.UseCors();
             #region ◊‘∂®“Â≈‰÷√
             app.UseSwagger(apiServiceName,apiServiceVersion);
             #endregion
